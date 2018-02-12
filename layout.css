@@ -1,0 +1,125 @@
+body{
+	margin: 0px;
+}
+
+/* CSS for Header... */
+.header{
+	background-color: #f1f1f1;
+	margin:0px;
+	/*position: absolute;
+	top:0px;
+	left:0px;*/
+	color:#73AD21;
+}
+.header > h1{
+	font-family: "Century Schoolbook";
+	margin:0px;
+	padding:10px;
+}
+.header > .headerBanner{
+	float: left;
+	height: 100px;
+	background-color: #B1B1B1;
+	border-bottom-right-radius: 5em;
+	transition: border-bottom-right-radius 200ms ease-out;
+}
+.header > .headerBanner:hover{
+	border-bottom-right-radius: 0em;
+}
+.header > ul.navbar:before,
+.header > ul.navbar:after{
+	content:"";
+	display: table;
+}
+.header > ul.navbar:after{
+	clear:both;
+}
+.header > ul.navbar{
+	background-color:#73AD21;
+	color:white;
+	margin-top:0px;
+	margin:0px;
+}
+.header > ul.navbar > li{
+	list-style: none;
+	float: right;
+	font-family: "Verdana";
+	border-right:1px solid white;
+	padding:11px;
+	cursor:pointer;
+	/* CSS Transitions...*/
+	-webkit-transition:background-color 200ms linear;
+	-moz-transition:background-color 200ms linear;
+	-o-transition:background-color 200ms linear;
+	transition: background-color 200ms linear;
+}
+.header > ul.navbar > li:hover{
+	background-color: 	#4B0082;
+}
+.header > ul.navbar > li:last-child{
+	border-left:1px solid white;
+}
+.header > ul.navbar > li:first-child{
+	border-right:none;
+}
+
+/* CSS for content... */
+.content{
+	clear:both;
+	background-image: url("../../lib/images/index-bg.jpg");
+	background-attachment:fixed;
+	height: 85%;
+}
+.content h1{
+	margin:0px;
+}
+
+/* CSS for Login Box...*/
+
+.loginBox{
+	background-color: white;
+	width:40vw;
+	height: 50vh;
+	position: relative;
+	left: 30vw;
+	top:15vh;
+	/*box-shadow: 10px 10px 20px 2px #73AD21;*/
+	border:1px solid #73AD21;
+}
+.loginBox .loginText{
+	padding:10px;
+	text-align: center;
+	color:#4B0082;
+}
+.loginBox hr{
+	color:#4B0082;
+	width:50%;
+}
+.loginBox .loginForm{
+	text-align: center;
+}
+.loginBox .loginForm input{
+	width:80%;
+	border-radius:5px;
+	padding:10px;
+	margin:10px;
+	font-size:20px;
+}
+
+.loginBox .loginForm input[type="submit"]{
+	background-color:#73AD21;
+	border:none;
+	border-radius:0;
+	color:white;
+	-webkit-transition:background-color 200ms linear;
+	-moz-transition:background-color 200ms linear;
+	-o-transition:background-color 200ms linear;
+	transition: background-color 200ms linear;
+}
+.loginBox .loginForm input[type="submit"]:hover{
+	background-color:#4B0082;
+}
+.loginBox .errBox{
+	color:#ff0033;
+	font-size:20px;
+}

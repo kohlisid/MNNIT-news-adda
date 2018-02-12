@@ -1,0 +1,105 @@
+.content{
+	background:none;
+}
+.content:before,
+.content:after{
+	content:"";
+	display: table;
+}
+.content:after{
+	clear:both;
+}
+
+/* Dashboard CSS ...*/
+.content > .dashboard{
+	float:left;
+	height:100%;
+	width:20%;
+	background-color:#4B0082;
+	text-align: center;
+	color:white;
+}
+.dashBoard > .userDP{
+	height:15vw;
+	padding:10px;
+	border-radius:50%;
+}
+.dashBoard > hr{
+	width:80%;
+}
+.dashBoard > .userName{
+	font-size:20px;
+	font-weight:700;
+}
+.dashBoard > .dashAction {
+	padding-left: 0px;
+}
+.dashBoard > .dashAction > li{
+	list-style: none;
+	border-top: 2px solid white;
+	padding:10px;
+	transition: background-color 200ms linear;
+ /}
+.dashBoard > .dashAction > li:last-child{
+	border-bottom:2px solid white;
+}
+.dashBoard > .dashAction > li:hover{
+	background-color:#73AD21;
+}
+.dashBoard > .dashAction > li.active{
+	background-color:#73AD21;
+}
+
+
+
+.content > .dispContent{
+	float:right;
+	height:100%;
+	width:80%;
+	overflow: auto;
+	overflow-x: hidden;
+	background-image: url("../../lib/images/index-bg.jpg");
+	background-attachment:fixed;
+}
+.dispContent > .mainContent > .head {
+	text-align: center;
+	font-size:30px;
+	color:black;
+	font-weight: bold;
+}
+.dispContent > .mainContent > .head > hr {
+	width:60%;
+	color:#73AD21;
+}
+.dispContent > .mainContent{
+	height: 100%;
+	width:100%;
+	background-color: rgba(255,255,255,0.8);
+	padding:20px;
+	padding-bottom:0px;
+}
+.dispContent > .mainContent > .card{
+	background-color: white;
+	height:40%;
+	width:30%;
+	float:left;
+	border:3px solid black;
+	margin:5px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+
+/* CSS for cards...*/
+.card > .cardHead{
+	text-align: center;
+	font-weight:700;
+	padding:5px;
+}
+.card > .cardHead > hr {
+	color: #555555;
+	width:50%;
+}
+.card > .cardBody{
+	text-align: justify;
+}
